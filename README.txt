@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/gebrutommy/pen/oGevzG.
-
- 
+I thought i lost this, but its an old project i made based of a mockup in dribbble 2016
