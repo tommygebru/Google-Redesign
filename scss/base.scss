@@ -1,0 +1,47 @@
+/************************************************
+             B A S E   S T Y L E S
+************************************************/
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  /*background:rgba(0,0,0,.1);*/
+}
+body {
+  margin: 0 auto;
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+/*mixin flexbox for every parent element/containers */
+@mixin flexbox {
+  flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  column {
+    flex-direction: column;
+  }
+  row {
+    flex-direction: row;
+  }
+  wrap{
+    flex-wrap:wrap;
+  }
+}
+i {
+  color: $grey;
+}
+li {
+  list-style-type: none;
+}
+a,
+i,
+li,
+img,
+.notification-content__status {
+  cursor: pointer;
+}
+.box-shadow {
+  box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.1);
+}

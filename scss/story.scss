@@ -1,0 +1,74 @@
+
+
+
+/************************************************
+             B L O C K   L E V E L  [articles]
+************************************************/
+@import "./variables.scss";
+
+.story-container {
+  width:95%;
+  margin:30px auto;
+  font-family: $main-font;
+  justify-content:space-between;
+  align-items:space-between;
+  padding:0;
+}
+
+.story {
+  width:31.5%;
+  margin:0;
+  box-shadow: 3px 5px 40px 3px rgba(0, 0, 0, 0.1);
+  background: white;
+  height: 280px;
+  border-radius:3px;
+}
+
+.story-heading {
+  justify-content: flex-start;
+  padding: 15px 5px;
+  width: 100%;
+  height: 50px;
+}
+
+.story-content {
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: $small-text;
+}
+/************************************************
+          E L E M E N T   L E V E L   [articles]
+************************************************/
+
+.story-heading__image {
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.story-content__image {
+  width: 100%;
+  height: 120px;
+}
+
+.story-content__description {
+  color: $black;
+  margin: 12px;
+  padding: 0px;
+}
+
+.story-content__link {
+  color: $blue;
+  margin: 12px 12px 5px 12px;
+  padding: 0;
+}
+
+/************************************************
+          M O D I F I E R   L E V E L  [articles]
+************************************************/
+.story a {
+margin-top:17px;
+}
+.story:first-child a {
+  margin-top: -5px;
+}

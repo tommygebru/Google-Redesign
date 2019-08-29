@@ -1,0 +1,74 @@
+
+
+
+/************************************************
+        B L O C K   S T Y L E S   [footer]
+************************************************/
+@import "./variables.scss";
+
+.footer-content {
+  font-family: $main-font;
+  margin:0 auto;
+  width: 95%;
+  margin-top:-350px;
+  margin-bottom:50px;
+}
+
+/************************************************
+     E L E M E N T   S T Y L E S  [footer]
+************************************************/
+/* P A G E L I S T - C O N T E N T */
+/*debugged*/
+.pagelist-content{
+  height:120px;
+  color:$blue;
+  justify-content: flex-start;
+}
+.pagelist-content.flex.row{
+  width:450px;
+}
+.pagelist-content__logo{
+  width:120px;
+}
+.pagelist-content__list{
+  padding:0;
+  font-weight: 700;
+  list-style-type: none;
+}
+.pagelist-content__list-item{
+  margin:7px 7px 0 7px;
+}
+.pagelist-content__list-item:first-child,
+.pagelist-content__list-item:hover{
+  color:#db3337;
+}
+/* S I T E M A P S - C O N T E N T */
+.sitemaps-content{
+color: $text-color;
+  margin-top: 60px;
+  font-size: $small-text;
+}
+
+.sitemaps-content__location,
+.sitemaps-content__policy {
+  list-style-type: none;
+  width: 700px;
+  justify-content:flex-start;
+  padding:0;
+  margin:0;
+}
+
+.sitemaps-content__location--list-item,
+.sitemaps-content__policy--list-item{
+  margin:0 5px;
+}
+
+.sitemaps-content__location--list-item:hover,
+.sitemaps-content__policy--list-item:hover{
+color:$heading-color;
+}
+/************************************************
+     M O D I F I E R   S T Y L E S   [footer]
+************************************************/
+.background-image{position:relative; margin:0; right:-315px; top:230px; width:87%; z-index:-100;  filter:brightness(0) invert(.9);
+}

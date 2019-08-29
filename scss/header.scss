@@ -1,0 +1,134 @@
+/************************************************
+             B L O C K   L E V E L   [header]
+************************************************/
+@import "./variables.scss";
+
+header {
+  font-family: $main-font;
+
+  width: 100%;
+}
+
+.searchbar, .iconlists {
+  width: inherit;
+  height: 50px;
+  padding: 0 40px;
+}
+.searchbar {
+  background: $blue;
+  justify-content: space-between;
+  width: inherit;
+}
+/************************************************
+          E L E M E N T   L E V E L   [header]
+************************************************/
+/* S E A R C H B A R - C O N T E N T */
+.searchbar-content__logo {
+width: 75px;
+filter: brightness(0) invert(1);
+}
+.searchbar-content__input {
+height: 35px;
+width: 580px;
+color: $blue;
+
+border: none;
+border-radius: 3px;
+outline: none;
+
+margin: 0 30px;
+text-indent: 15px;
+font-size: $medium-text;
+}
+.searchbar-content__icon {
+color: $blue;
+font-size: 18px;
+margin-left: -70px;
+}
+
+
+
+/* N O T I F I C A T I O N - C O N T E N T */
+.notification-content__icon{
+color:$darkblue;
+}
+
+.notification-content__status {
+background: white;
+color: $blue;
+
+height: 25px;
+width: 25px;
+font-size: $small-text;
+
+margin: 0 15px;
+border-radius: 50%;
+}
+
+.notification-content__avatar {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+
+
+.iconlists {
+color: $grey;
+background: $lightgrey;
+font-size: 14px;
+
+margin: 0 auto;
+justify-content: space-between;
+}
+
+
+/* I C O N L I S T S - P R I M A R Y */
+.iconlists-primary {
+height: 30px;
+border-right: solid #c5c5c5 2px;
+}
+.iconlists-primary li{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.iconlists-primary i {
+margin: 0 15px 0 0;
+font-size: 25px;
+}
+.iconlists-primary.flex {
+padding: 0;
+}
+/* I C O N L I S T S - S E C O N D A R Y */
+.iconlists-secondary {
+padding: 0px;
+margin: 0 20px -5px 20px;
+}
+.iconlists-secondary li {
+font-size: $small-text;
+
+margin: 0 auto;
+padding: 8px 6.7px;
+border-bottom: solid 2.5px $lightgrey;
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.iconlists-secondary i {
+font-size: $medium-text;
+margin: 5px;
+}
+/************************************************
+          M O D I F I E R   L E V E L  [header]
+************************************************/
+.iconlists-primary li:first-child i,
+.iconlists-secondary li:first-child i,
+.iconlists-secondary li:first-child {
+  color: $blue;
+}
+.iconlists-secondary li:hover,
+.iconlists-secondary li:first-child {
+  border-bottom: solid 2.5px $blue;
+}
